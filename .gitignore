@@ -78,3 +78,6 @@ crashlytics-build.properties
 /com.ptc.vuforia.engine-*/
 /Assets/Resources/VuforiaConfiguration.asset
 
+# Firebase Large Files
+**/Firebase/Plugins/x86_64/*.bundle
+**/Firebase/Plugins/x86_64/*.so
