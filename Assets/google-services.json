@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "822291815140",
+    "firebase_url": "https://ar-dil-kartlari-default-rtdb.firebaseio.com",
+    "project_id": "ar-dil-kartlari",
+    "storage_bucket": "ar-dil-kartlari.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822291815140:android:cc86908a3f72fde3faaaf1",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ARLanguageCards"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJT8NC1aTmWyjjTHkaJRKIi4oP4Wcg2Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
