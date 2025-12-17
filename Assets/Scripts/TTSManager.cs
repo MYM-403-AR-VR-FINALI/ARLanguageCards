@@ -7,7 +7,7 @@ public class TTSManager : MonoBehaviour
     public static TTSManager Instance;
     public AudioSource audioSource;
 
-    // HAFIZA (İkiye ayırdık)
+    // HAFIZA
     private string hafizaKelime = "";
     private string hafizaCumle = "";
 
@@ -17,30 +17,26 @@ public class TTSManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    // 1. KART BULUNUNCA BU ÇAĞRILACAK (Otomatik Okuma)
     public void KartTanimlaVeOku(string kelime, string cumle)
     {
         hafizaKelime = kelime;
         hafizaCumle = cumle;
-
-        // Kart ilk göründüğünde ikisini peş peşe okusun (Apple... This is an apple)
+        // İlk görüşte ikisini de okusun
         Speak(kelime + ". " + cumle);
     }
 
-    // 2. KELİME BUTONU İÇİN
     public void SadeceKelimeyiOku()
     {
         if (!string.IsNullOrEmpty(hafizaKelime)) Speak(hafizaKelime);
     }
 
-    // 3. CÜMLE BUTONU İÇİN
     public void SadeceCumleyiOku()
     {
         if (!string.IsNullOrEmpty(hafizaCumle)) Speak(hafizaCumle);
     }
 
-    // --- SES İNDİRME MOTORU (Aynı kalıyor) ---
-    private void Speak(string text)
+    // DÜZELTME BURADA: "private" yerine "public" yaptık!
+    public void Speak(string text)
     {
         StartCoroutine(SesIndirVeCal(text));
     }
