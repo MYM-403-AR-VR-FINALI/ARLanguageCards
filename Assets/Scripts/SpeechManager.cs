@@ -12,14 +12,14 @@ public class SpeechManager : MonoBehaviour
     public static SpeechManager Instance;
 
     [Header("Gemini Ayarlarý")]
-    public string geminiApiKey = "BURAYA_API_KEY_YAZIN"; 
+    public string geminiApiKey = "BURAYA_API_KEY_YAZIN";
 
     private const string API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent";
 
     [Header("UI Baðlantýlarý")]
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI buttonLabel; 
-    public TextMeshProUGUI buttonLabelCumle; 
+    public TextMeshProUGUI buttonLabel;
+    public TextMeshProUGUI buttonLabelCumle;
 
     // --- HAFIZA ---
     private string aktifKelime = "";
@@ -139,6 +139,21 @@ public class SpeechManager : MonoBehaviour
 
                 string hedef = puanlamaCumleIcinMi ? aktifCumle : aktifKelime;
                 int score = CalculateScore(hedef, spokenText);
+
+                // -----------------------------------------------------------
+                //  VERÝTABANI VE ANALÝTÝK KAYDI BURADA YAPILIYOR
+                // -----------------------------------------------------------
+                if (DatabaseManager.Instance != null)
+                {
+                    string tur = puanlamaCumleIcinMi ? "Cumle" : "Kelime";
+
+                    // 1. Veritabanýna Skoru Kaydet (Firestore)
+                    DatabaseManager.Instance.SkoruKaydet(hedef, score, tur);
+
+                    // 2. Analitik Log Tut (Firebase Analytics)
+                    DatabaseManager.Instance.LogTut("telaffuz_denemesi", score.ToString());
+                }
+                // -----------------------------------------------------------
 
                 if (scoreText)
                 {

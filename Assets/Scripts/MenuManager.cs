@@ -17,4 +17,9 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("VehiclesScene");
     }
+
+    public void AcProfil()
+    {
+        SceneManager.LoadScene("ScoreboardScene");
+    }
 }

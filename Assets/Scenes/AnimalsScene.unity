@@ -3165,6 +3165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247832679}
   - component: {fileID: 1247832678}
+  - component: {fileID: 1247832680}
   m_Layer: 0
   m_Name: _SesYonetici
   m_TagString: Untagged
@@ -3184,7 +3185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3472c9f159141446aa369a5119dc837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geminiApiKey: AIzaSyABMua82Tsnz7EyQqUIUwD4wcsh0W25-fo
+  geminiApiKey: AIzaSyCOh5EPcZgvtYML_OwiF7ihnTxvy34hktQ
   scoreText: {fileID: 238911495}
   buttonLabel: {fileID: 1150491696}
   buttonLabelCumle: {fileID: 1530682370}
@@ -3203,6 +3204,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247832680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247832677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15676c2af8efc6478e1b99d5d39b02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1333041512
 GameObject:
   m_ObjectHideFlags: 0
