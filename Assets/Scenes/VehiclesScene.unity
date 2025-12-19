@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3472c9f159141446aa369a5119dc837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geminiApiKey: AIzaSyABMua82Tsnz7EyQqUIUwD4wcsh0W25-fo
+  geminiApiKey: AIzaSyDAwmop-Y7LgIcg00Qh7S-0Lns3Kopc0D4
   scoreText: {fileID: 1623951714}
   buttonLabel: {fileID: 359754690}
   buttonLabelCumle: {fileID: 352249629}
