@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 39ec14846d2517947b7a3323ecba51e9
   - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 7c79053767d896a4c81dec7a43452e1f
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 503729ba092b5a44f89d06de1b730d66
+  - enabled: 1
     path: Assets/Scenes/FruitsScene.unity
     guid: c372577cbfd286f488816940bfbf459c
   - enabled: 1

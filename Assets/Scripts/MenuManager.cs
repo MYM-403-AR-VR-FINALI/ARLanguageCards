@@ -18,6 +18,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("VehiclesScene");
     }
 
+    public void LobiyeGit()
+    {
+        SceneManager.LoadScene("LobbyScene");
+    }
+
     public void AcProfil()
     {
         SceneManager.LoadScene("ScoreboardScene");
